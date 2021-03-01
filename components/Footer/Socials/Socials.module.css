@@ -1,6 +1,7 @@
 .socials {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 5em;
   padding: 2em 0 1em;
   border-top: 1px solid var(--clr-grey-dark);
@@ -8,7 +9,6 @@
 
 .logo {
   display: flex;
-  gap: 1rem;
   align-items: center;
 }
 
@@ -16,9 +16,13 @@
   color: var(--clr-grey-dark) !important;
   text-transform: uppercase;
   font-size: 1.25rem;
+  margin-left: 1em;
 }
 
 .icons {
   display: flex;
-  gap: 2em;
+}
+
+.icon {
+  margin-inline-start: 2em;
 }

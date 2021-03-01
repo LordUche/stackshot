@@ -22,6 +22,9 @@
   /* Breakpoints */
   --breakpoint-tablet: 600px;
   --breakpoint-desktop: 1200px;
+
+  --btn-padding: 1em 5em;
+  --btn-margin: 2em 0 0;
 }
 
 html {
@@ -129,7 +132,8 @@ form .btn {
   font-size: calc(var(--fs-body2) * 1.2);
   color: var(--clr-white);
   line-height: var(--lh-body2);
-  padding: 1em 5em;
+  padding: var(--btn-padding);
+  margin: var(--btn-margin);
   border-radius: 5em;
   text-align: center;
   border: 0;

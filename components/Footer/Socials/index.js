@@ -9,9 +9,15 @@ const Socials = () => {
         <h2 className={styles.logoText}>StackShot</h2>
       </div>
       <div className={styles.icons}>
-        <Image src={'/images/Facebook.svg'} width={10} height={20} />
-        <Image src={'/images/Twitter.svg'} width={25} height={20} />
-        <Image src={'/images/Instagram.svg'} width={21} height={20} />
+        <div className={styles.icon}>
+          <Image className={styles.icon} src={'/images/Facebook.svg'} width={10} height={20} />
+        </div>
+        <div className={styles.icon}>
+          <Image className={styles.icon} src={'/images/Twitter.svg'} width={25} height={20} />
+        </div>
+        <div className={styles.icon}>
+          <Image className={styles.icon} src={'/images/Instagram.svg'} width={21} height={20} />
+        </div>
       </div>
     </div>
   )
