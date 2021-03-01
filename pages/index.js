@@ -10,6 +10,11 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>StackShot</title>
+        <meta name="description" content="Real-time Payment Monitor" />
+        <meta name="keywords" content="payment, investment, gateway, real-time, realtime" />
+      </Head>
       <header className={styles.header}>
         <Navbar />
         <Hero />
