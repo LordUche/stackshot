@@ -130,7 +130,6 @@ form .btn {
   color: var(--clr-white);
   line-height: var(--lh-body2);
   padding: 1em 5em;
-  margin-top: 2em;
   border-radius: 5em;
   text-align: center;
   border: 0;
@@ -156,6 +155,7 @@ form .btn {
 
   .flex {
     flex-direction: row;
+    align-items: center;
   }
 
   .btn {

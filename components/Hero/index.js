@@ -12,7 +12,7 @@ const Hero = () => {
           data.
         </p>
         <Link href="#contact-form">
-          <a className="btn">Contact Us</a>
+          <a className={`btn ${styles.cta}`}>Contact Us</a>
         </Link>
       </div>
       <div className={styles.heroImg}>

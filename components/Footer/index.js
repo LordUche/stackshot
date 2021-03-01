@@ -9,7 +9,7 @@ const Footer = () => {
       <h2>Contact Us</h2>
       <ContactForm />
       <Socials />
-      <div className="flex container">
+      <div className={`flex container ${styles.copyright}`}>
         <Link href="/">
           <a>API Documentation</a>
         </Link>
