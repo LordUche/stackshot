@@ -1,0 +1,31 @@
+.service {
+  align-items: center;
+  justify-content: space-between;
+  margin-block-start: 3em;
+}
+
+.serviceText {
+  flex-basis: 52%;
+  padding: 3em;
+  padding-inline-start: 0;
+}
+
+.serviceImage {
+  flex-basis: 60%;
+  text-align: right;
+}
+
+@media only screen and (min-width: 600px) {
+  .service:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+
+  .service:nth-child(2) .serviceImage {
+    text-align: left;
+  }
+
+  .service:nth-child(2) .serviceText {
+    padding-inline-end: 0;
+    padding-inline-start: 3em;
+  }
+}

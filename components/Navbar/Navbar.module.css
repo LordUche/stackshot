@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logoText {
+  color: var(--clr-white);
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}

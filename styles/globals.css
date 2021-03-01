@@ -1,9 +1,40 @@
+:root {
+  /* Colors */
+  --clr-primary: #ef2a82;
+  --clr-secondary: #0088f0;
+  --clr-accent: #172755;
+  --clr-grey-dark: #8794ba;
+  --clr-grey: #e5e5e5;
+  --clr-grey-light: #eeeef6;
+  --clr-white: #ffffff;
+
+  /* Fonts */
+  --ff-primary: Roboto, sans-serif;
+  --fs-body1: 1.125rem;
+  --fs-body2: 1rem;
+  --fs-headline1: 3.125rem;
+  --fs-headline2: 2.5rem;
+
+  --lh-body1: 1.5;
+  --lh-body2: 1.4;
+  --lh-headline1: 1.2;
+
+  /* Breakpoints */
+  --breakpoint-tablet: 600px;
+  --breakpoint-desktop: 1200px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--ff-primary);
+  color: var(--clr-grey-dark);
+  background-color: var(--clr-grey-light);
 }
 
 a {
@@ -11,6 +42,101 @@ a {
   text-decoration: none;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+.container {
+  width: 90vw;
+  max-width: var(--breakpoint-desktop);
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: bold;
+  color: var(--clr-accent);
+}
+
+h1 {
+  font-size: var(--fs-headline1);
+  font-weight: bold;
+  color: var(--clr-white);
+}
+
+h2 {
+  font-size: var(--fs-headline2);
+}
+
+p,
+label {
+  font-size: var(--fs-body1);
+  line-height: var(--lh-body1);
+}
+
+label {
+  color: var(--clr-accent);
+}
+
+.small,
+h4 {
+  font-size: var(--fs-body2);
+  line-height: var(--lh-body1);
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: var(--clr-grey-light);
+  padding: 1em 2em;
+  border-radius: 3em;
+  border: 0;
+  resize: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form .btn {
+  align-self: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--clr-primary);
+  font-size: var(--fs-body2);
+  color: var(--clr-white);
+  line-height: var(--lh-body2);
+  padding: 1em 5em;
+  margin-top: 2em;
+  border-radius: 5em;
+  text-align: center;
+  border: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  .flex {
+    flex-direction: row;
+  }
 }

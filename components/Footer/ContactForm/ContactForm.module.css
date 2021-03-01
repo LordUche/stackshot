@@ -1,0 +1,14 @@
+.contactForm {
+  background-color: var(--clr-white);
+  border-radius: 2em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 8em;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

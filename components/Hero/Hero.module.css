@@ -1,0 +1,14 @@
+.hero {
+}
+
+.heroText {
+  --padding: calc((100vw - min(90vw, var(--breakpoint-desktop))) / 2);
+  margin-block-start: 5em;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
+.heroImg {
+  text-align: right;
+  margin-block-start: 5em;
+}

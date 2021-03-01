@@ -1,0 +1,24 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5em;
+  padding: 2em 0;
+  border-top: 1px solid var(--clr-grey-dark);
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logoText {
+  color: var(--clr-grey-dark) !important;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.icons {
+  display: flex;
+  gap: 2em;
+}
