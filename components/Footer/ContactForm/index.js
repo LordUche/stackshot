@@ -2,8 +2,8 @@ import styles from './ContactForm.module.css'
 
 const ContactForm = () => {
   return (
-    <div className={`container ${styles.contactForm}`}>
-      <form>
+    <div className={`container ${styles.contactForm}`} id="contact-form">
+      <form method="POST">
         <div className={`${styles.formControl}`}>
           <label htmlFor="name">Name</label>
           <input type="text" id="name" name="name" />

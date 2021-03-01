@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from 'next/image'
 import styles from './Navbar.module.css'
 
@@ -8,9 +9,9 @@ const Navbar = () => {
         <Image src="/images/logo.svg" width={40} height={40} />
         <h2 className={styles.logoText}>StackShot</h2>
       </div>
-      <a href="#" className="btn">
-        Contact Us
-      </a>
+      <Link href="#contact-form">
+        <a className="btn">Contact Us</a>
+      </Link>
     </nav>
   )
 }

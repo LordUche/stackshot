@@ -7,9 +7,8 @@ const Features = () => {
     <section className={`container ${styles.features}`}>
       <h2>Main Features</h2>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda officia doloremque odio vel. Repellendus
-        nulla accusantium eligendi adipisci accusamus? Doloremque facere rem iusto. Autem modi quisquam at enim nihil.
-        Animi!
+        Integrate with Stackshot and remove the burden of monitoring payments, verifying beneficiary data and reporting
+        transactions.
       </p>
       <div className="flex">
         {features.map((feature) => (
