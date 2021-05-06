@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>StackShot</title>
         <meta name="description" content="Real-time Payment Monitor" />
-        <meta name="keywords" content="payment, investment, gateway, real-time, realtime" />
+        <meta name="keywords" content="payment, investment, gateway, real-time, realtime, africa" />
       </Head>
       <header className={styles.header}>
         <Navbar />
