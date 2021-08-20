@@ -13,7 +13,7 @@ const Footer = () => {
         <Link href="/">
           <a>API Documentation</a>
         </Link>
-        <p>© Stackshot Platform Limited 2020. All Rights Reserved.</p>
+        <p>© Stackshot Platform Limited {new Date().getFullYear()}. All Rights Reserved.</p>
       </div>
     </footer>
   )
